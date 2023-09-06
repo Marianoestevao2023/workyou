@@ -1,0 +1,425 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+html{
+
+    --violeta-p:#7f22c2;
+    --violetadark-p:#641ee7;
+    --pink-p:#810ec4;
+    --black-p: #000000;
+    --white-p: #fff;
+    --brownlight-p:#f5ae6c;
+}
+body{
+    height: 100vh;
+    padding-top: 50px;
+    
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 5px;
+    background-color: white;
+    box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.103);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    border-radius: 0px 0px 10px 10px;
+    border-bottom: 3px solid var(--violeta-p);
+    z-index: 10;
+}
+.logo img{
+    width: 150px;
+}
+header div>nav a{
+    margin-right: 10px;
+    color: black;
+    font-size: 16px;
+}
+.opcoes_header
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.opcoes_header a 
+{
+    color: var(--black-p);
+    margin-right: 10px;
+}
+.visitar{
+    padding: 10px 50px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background-color: var(--violeta-p);
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+@media screen and (max-width: 1080px){
+    .opcoes_header {
+        display: none;
+    }
+
+    header div>nav {
+       display: none;
+    }
+}
+@media screen and (max-width:670px){
+    .logo > img{
+        width: 120px;
+    }
+   
+    .visitar{
+        padding: 6px 30px;
+        font-size: 14px;
+     
+    }
+}
+.pb{
+    background-image:url(bonecos/capa_fudo_blue2.png);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 0px 0px 20px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+#text h3{
+    font-size: 60px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#Saber{
+    padding: 15px 60px;
+    background-color: var(--violeta-p);
+    color: white;
+    border-radius: 5px;
+}
+
+.imagem_pb> img{
+    width: 500px;
+}
+@media screen and (max-width:1215px){
+    #text h3{
+        font-size: 40px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    .imagem_pb> img{
+        width: 340px;
+    }
+}
+@media screen and (max-width:690px){
+    .imagem_pb> img{
+        width: 400px;
+    }
+    #Saber{
+        padding: 12px 40px;
+       
+    }
+}
+@media screen and (max-width:500px){
+    .pb{
+        background-image:url(bonecos/capa_fudo_blue2.png);
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 0px 0px 5px 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 20px;
+    }
+    #text h3{
+        font-size: 30px;
+    }
+    #conta{
+        display: none;
+    }
+    header div>nav a{
+        margin-right: 10px;
+        color: black;
+        font-size: 10px;
+    }
+    .imagem_pb> img{
+        width: 300px;
+    }
+    #Saber{
+        padding: 12px 40px;
+       
+    }
+    .visitar{
+        padding: 5px 17px;
+        font-size: 9px;
+     
+    }
+   
+    
+}
+#xugu_servicos{
+    text-align: center;
+}
+#xugu_servicos h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 35px;
+    font-weight: 500;
+}
+#xugu_servicos p {
+    color: gray;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+@media screen and (max-width:600px){
+    #xugu_servicos h1{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        font-weight: bold;
+       
+    }
+    #xugu_servicos p {
+        color: var(--black-p);
+        font-size: 12px;
+    }
+}
+#cards_elemente
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    
+}
+.cards
+{
+    text-align: center;
+    width: 300px;
+    height: 230px;border-radius: 4px;
+    background-color: var(--pink-p);
+    margin: 4%;
+}
+.cards img 
+{
+    opacity: .80;
+    z-index: 2;
+}
+.cards #cards_mini
+{
+    width: 250px;
+    height: 200px;
+    background-color: white;
+    box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.322);
+    padding: 25px;
+    margin-left: -20px;
+}
+.cards #cards_mini h3 
+{
+    font-size: 18px;margin-bottom: 10px;
+    
+}
+.cards #cards_mini p
+{
+    font-size: 14px;
+    color: gray;
+    line-height: 22px;
+    
+}
+.cards.color 
+{
+    background-color: rgb(41, 35, 78);
+}
+@media screen and (max-width:777px){
+    #cards_elemente
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    
+}
+.cards
+{
+    text-align: center;
+    width: 300px;
+    height: 230px;border-radius: 4px;
+    background-color: var(--pink-p);
+    margin: 4%;
+}
+.cards #cards_mini
+{
+    width: 250px;
+    height: 150px;
+    padding: 15px;
+    margin-left: -5px;
+}
+}
+#sabermais{
+    text-align: center;
+}
+
+.sabermais{
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    outline:none;
+    width: 190px;color: var(--white-p);
+    background-color: var(--violetadark-p);
+
+}
+#Elemento_exprimenta{
+    margin: auto;
+    width: 90%;padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border-radius: 50px;
+    background-color: var(--violetadark-p);
+}
+#Elemento_exprimenta h1{
+    color: white;
+}
+
+#Elemento_exprimenta a {
+    padding: 10px 40px;
+    color: var(--black-p);
+    border-radius: 5px;
+    background-color: var(--white-p);
+
+}
+#imagem_down{
+    margin: 1rem;
+    border-radius: 5px;
+    rotate: 40deg;
+    border: 20px solid var(--violetadark-p);
+    background-color: white;
+    border-radius: 8px 70px 8px 70px;
+}
+#imagem_down img{
+   width: 350px;
+   rotate: -40deg;
+}
+#fazerLogin{
+    background-color: var(--brownlight-p);
+}
+@media screen and (max-width:1200px){
+    #imagem_down{
+        border: 10px solid var(--violetadark-p);
+        background-color: white;
+        border-radius: 8px 70px 8px 70px;
+    }
+    #imagem_down img{
+       width: 300px;
+       rotate: -40deg;
+    }
+}
+@media screen and (max-width:500px){
+    #Elemento_exprimenta h1{
+        font-size: 19px;
+        color: white;
+    }
+    #Elemento_exprimenta a {
+        padding: 7px 20px;
+        color: var(--black-p);
+        border-radius: 5px;
+        background-color: var(--white-p);
+    
+    }
+    #imagem_down{
+        margin-top: 2rem;
+        rotate: 0deg;
+        border: 0px solid var(--violetadark-p);
+        border-radius: 8px 50px 8px 50px;
+    }
+    #imagem_down img {
+        width: 240px;
+    }
+}
+#subfooter{
+    background-color: rgb(226, 226, 226);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+#subfooter ul {
+    margin: 2%;
+    list-style: none;
+}
+#subfooter ul li{
+    margin-top: 10px;
+}
+#subfooter ul li a{
+   color: var(--black-p);
+}
+@media screen and (max-width:500px){
+    #subfooter ul li a{
+        color: var(--black-p);
+        font-size: 12px;
+     }
+}
+
+.local_mensagem{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media screen and (max-width:1100px){
+    .local_mensagem{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+.local_mensagem div input {
+    width: 350px;
+    height: 45px;
+    padding-left: 10px;
+    border: none;
+    border: 1px solid gray;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.local_mensagem div textarea{
+    width: 350px;
+    max-width: 350px;
+    height: 130px;
+    border: none;
+    border: 1px solid gray;
+    padding: 10px;resize: none;
+    margin-bottom: 10px;
+   
+}
+.local_mensagem div input ,
+.local_mensagem div textarea:hover{
+    border: 1px solid var(--violetadark-p);
+}
+.local_mensagem div button{
+    padding: 10px 40px;
+    border: none;
+    background-color: var(--violetadark-p);
+    color: white;
+    outline: none;
+    border-radius: 5px;
+}
+footer{
+    border-radius: 20px 20px 0px 0px;
+    text-align: center;
+    color: white;
+    padding: 20px;
+    background-color: rgb(41, 35, 78);
+}
